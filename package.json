@@ -1,0 +1,39 @@
+{
+  "name": "issue_addondocs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@drivy/babel-preset-app": "^0.1.12",
+    "@drivy/ts-config": "^1.1.3",
+    "@storybook/addon-docs": "^5.3.13",
+    "@storybook/addons": "^5.3.13",
+    "@storybook/react": "^5.3.13",
+    "@storybook/source-loader": "^5.3.13",
+    "@types/events": "^3.0.0",
+    "@types/react": "^16.9.21",
+    "babel-loader": "^8.0.6",
+    "classnames": "^2.2.6",
+    "css-loader": "^3.4.2",
+    "fork-ts-checker-webpack-plugin": "^4.0.4",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^4.0.0",
+    "react": "^16.12.0",
+    "react-docgen-typescript-loader": "^3.6.0",
+    "react-dom": "^16.12.0",
+    "sass-loader": "^8.0.2",
+    "string-replace-loader": "^2.2.0",
+    "style-loader": "^1.1.3",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006"
+  },
+  "dependencies": {
+    "@types/classnames": "^2.2.9"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "./node_modules/@drivy/ts-config/base",
+  "compilerOptions": {
+    "allowJs": false,
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
