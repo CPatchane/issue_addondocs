@@ -21,21 +21,6 @@ module.exports = config => {
 
   config.plugins.push(new ForkTsCheckerWebpackPlugin())
 
-  config.module.rules.push({
-    // 2a. Load `.stories.mdx` / `.story.mdx` files as CSF and generate
-    //     the docs page from the markdown
-    test: /\.story\.mdx$/,
-    use: [
-      require.resolve("babel-loader"),
-      {
-        loader: "@mdx-js/loader",
-        options: {
-          compilers: [createCompiler({})],
-        },
-      },
-    ],
-  })
-
   // Run `source-loader` on story files to show their source code
   // automatically in `DocsPage` or the `Source` doc block.
   config.module.rules.push({
@@ -45,5 +30,6 @@ module.exports = config => {
     enforce: "pre",
   })
 
+  config.resolve.extensions.push(".ts", ".tsx")
   return config
 }

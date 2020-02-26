@@ -1,3 +1,4 @@
+import React from "react"
 import { addParameters, addDecorator } from "@storybook/react"
 import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks"
 
